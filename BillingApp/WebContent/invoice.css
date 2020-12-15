@@ -1,0 +1,28 @@
+@charset "UTF-8";
+header ul li{
+   list-style-type: none;
+}
+
+#cd ul,ol li{
+   list-style-type: none;
+}
+
+/**
+#cd ol li{
+   list-style-type: none;
+  
+}
+ **/
+
+#cd {
+   border: 1px solid black;
+   padding: 5px;
+}
+
+ 
+
+#AmountSection ul li
+{
+
+   list-style-type: none;
+}

@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%><!DOCTYPE html>
 <html>
 
 <head>
@@ -59,7 +60,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="#"><i class="fas fa-file-invoice-dollar"></i>Invoice</a>
+                    <a href="#" data-toggle="modal" data-target="#invoicItems"><i class="fas fa-file-invoice-dollar"></i>Invoice</a>
                 </li>
                 <li>
                     <a href="#"><i class="fas fa-users"></i>Customer Details</a>
@@ -79,11 +80,29 @@
                 </div>
             </nav>
             <div id="grayContainer">
+            <!-- 
                 <div class="row">
-                    <!--Row-->
-                  
+                    
+
+                       <div class="col-sm-4" id="todoLoadContain">
+                        
+                       </div>
+                       
+                        <div class="col-sm-4">
+                        <h3 style="text-align : center; ">Column 2</h3>
+                        <p>Bootstrap's grid system is responsive, and the columns will re-arrange depending on the screen size: On a big screen it might look better with the content organized in three columns, but on a small screen it would be better if the content items were stacked on top of each other.</p>
+                       </div>
+                       
+                       <div class="col-sm-4">
+                        <h3 style="text-align : center; ">Column 3</h3>
+                        <p>Bootstrap's grid system is responsive, and the columns will re-arrange depending on the screen size: On a big screen it might look better with the content organized in three columns, but on a small screen it would be better if the content items were stacked on top of each other.</p>
+                       </div>
+                      
+                         
+                        
                         
                 </div>
+             -->
                 <!--Row 3 list table, chart, todo list -->
             </div> <!-- Total gray container  -->
         </div>
@@ -108,7 +127,7 @@
                 </div>
                 <!-- Modal body -->
                 <div class="modal-body">
-                    <table class="table table-striped">
+                    <table class="table table-striped table-responsive-sm">
                         <tr>
                             <td>Name</td>
                             <td><input type="text" name="name"></td>
@@ -152,7 +171,7 @@
                 </div>
                 <!-- Modal body -->
                 <div class="modal-body">
-                    <table class="table table-striped">
+                    <table class="table table-striped table-responsive-sm">
                         <tr>
                             <td>Name</td>
                             <td><input type="text" name="name"></td>
@@ -177,7 +196,7 @@
                         </tr>
                     </table>
                 </div>
-                <!-- Modal footer -->
+                <!-- Modal footer --> 
                 <div class="modal-footer">
                     <button type="button" class="btn btn-success">Update</button>
                     <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
@@ -196,7 +215,7 @@
                 </div>
                 <!-- Modal body -->
                 <div class="modal-body">
-                    <table class="table table-striped">
+                    <table class="table table-striped table-responsive-sm">
                         <tr>
                             <td>Email</td>
                             <td><input type="email" name="name"></td>
@@ -231,7 +250,7 @@
                 </div>
                 <!-- Modal body -->
                 <div class="modal-body" style="overflow-y: scroll; height: 300px;">
-                    <table class="table table-dark table-hover">
+                    <table class="table table-dark table-hover table-responsive-sm">
                         <thead>
                             <tr>
                                 <th>Firstname</th>
@@ -241,55 +260,46 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>John</td>
-                                <td>Doe</td>
-                                <td>john@example.com</td>
+                                <td>Akash</td>
+                                <td>Mondal</td>
+                                <td>birendra@example.com</td>
                             </tr>
                             <tr>
-                                <td>Mary</td>
-                                <td>Moe</td>
-                                <td>mary@example.com</td>
+                                <td>Akash</td>
+                                <td>Mondal</td>
+                                <td>birendra@example.com</td>
+                            </tr>
+                           <tr>
+                                <td>Akash</td>
+                                <td>Mondal</td>
+                                <td>birendra@example.com</td>
                             </tr>
                             <tr>
-                                <td>July</td>
-                                <td>Dooley</td>
-                                <td>july@example.com</td>
+                                <td>Akash</td>
+                                <td>Mondal</td>
+                                <td>birendra@example.com</td>
                             </tr>
                             <tr>
-                                <td>July</td>
-                                <td>Dooley</td>
-                                <td>july@example.com</td>
+                                <td>Akash</td>
+                                <td>Mondal</td>
+                                <td>birendra@example.com</td>
                             </tr>
                             <tr>
-                                <td>July</td>
-                                <td>Dooley</td>
-                                <td>july@example.com</td>
+                                <td>Akash</td>
+                                <td>Mondal</td>
+                                <td>birendra@example.com</td>
+                            </tr>
+                           <tr>
+                                <td>Akash</td>
+                                <td>Mondal</td>
+                                <td>birendra@example.com</td>
                             </tr>
                             <tr>
-                                <td>July</td>
-                                <td>Dooley</td>
-                                <td>july@example.com</td>
+                                <td>Akash</td>
+                                <td>Mondal</td>
+                                <td>birendra@example.com</td>
                             </tr>
-                            <tr>
-                                <td>July</td>
-                                <td>Dooley</td>
-                                <td>july@example.com</td>
-                            </tr>
-                            <tr>
-                                <td>July</td>
-                                <td>Dooley</td>
-                                <td>july@example.com</td>
-                            </tr>
-                            <tr>
-                                <td>July</td>
-                                <td>Dooley</td>
-                                <td>july@example.com</td>
-                            </tr>
-                            <tr>
-                                <td>July</td>
-                                <td>Dooley</td>
-                                <td>july@example.com</td>
-                            </tr>
+                             
                         </tbody>
                     </table>
                 </div>
@@ -313,7 +323,7 @@
                 </div>
                 <!-- Modal body -->
                 <div class="modal-body">
-                    <table class="table table-striped">
+                    <table class="table table-striped table-responsive-sm">
                         <tr>
                             <td>Product Name</td>
                             <td><input type="text" name="proname"></td>
@@ -350,6 +360,114 @@
         </div>
     </div>
     
+    
+    
+    
+    <!-- Modal of Add items in invoice  -->
+    
+     <!-- Create user Modal Class -->
+    <div class="modal" id="invoicItems">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title"><i class="fas fa-cart-plus"></i> Add to Cart</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <table class="table table-striped table-responsive-sm">
+                        <tr>
+                            <td>Product Name</td>
+                            <td><input type="text" name="proname"></td>
+                        </tr>
+                        <tr>
+                            <td>Selling Price</td>
+                            <td><input type="text" name="sellprice"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="radio" name="radio1" value="admin"> Avalable </td>
+                            <td>
+                                <input type="radio" name="radio1" value="user"> Unavalable </td>
+                        </tr>
+                        <td>Quantity</td>
+                        <td><input type="text" name="qnty"></td>
+                        </tr>
+                        <td>
+                          <button type="button" class="btn btn-warning">Add Product</button>
+                        </td>
+                    </table>
+                    
+                   
+                    <!-- List of items add for print  -->
+                    
+                    <div style="overflow-y: scroll; height: 150px;" >
+                    
+                      <table class="table table-dark table-hover table-responsive-sm">
+                        <thead>
+                            <tr>
+                                <th>Products</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                                <th>Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Dark Forest</td>
+                                <td>350</td>
+                                <td>10</td>
+                                <td>3500</td>
+                            </tr>
+                            <tr>
+                                <td>Dark Forest</td>
+                                <td>350</td>
+                                <td>10</td>
+                                <td>3500</td>
+                            </tr>
+                           <tr>
+                                <td>Dark Forest</td>
+                                <td>350</td>
+                                <td>10</td>
+                                <td>3500</td>
+                            </tr>
+                             <tr>
+                                <td>Dark Forest</td>
+                                <td>350</td>
+                                <td>10</td>
+                                <td>3500</td>
+                            </tr>
+                             <tr>
+                                <td>Dark Forest</td>
+                                <td>350</td>
+                                <td>10</td>
+                                <td>3500</td>
+                            </tr>
+                             <tr>
+                                <td>Dark Forest</td>
+                                <td>350</td>
+                                <td>10</td>
+                                <td>3500</td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                    
+                    </div>
+                </div>
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success moveToInvoice"  onclick="document.location='Invoice.jsp'">Print</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
     <!-- jQuery CDN - Slim version (=without AJAX) -->
   <!--   <script src="https://code.jquery.com/jquery-3.5.1.js" ></script><!-- Popper.JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -367,7 +485,7 @@
     <!-- Load Stock table -->
     
      
-    
+    <!-- Load the stock table -->
     <script >
          $(document).ready(function(){
          $(".clickmebox").click(function(){
@@ -377,10 +495,25 @@
     </script>
     
     
-    
-    
-    
-   
+    <!-- Load the todo list on the div  -->
+ 
+      <script>
+         $(document).ready(function(){
+         $("#todoLoadContain").load("Todolist.jsp");
+         });
+     </script>
+     
+     <!-- Load the invoice  
+         
+     
+      <script >
+         $(document).ready(function(){
+         $(".moveToInvoice").click(function(){
+         $("#grayContainer").load("Invoice.jsp");
+         });
+         });
+    </script>
+    -->
    
 </body>
 

@@ -21,7 +21,7 @@
   <div class="container">
         <h2><i class="fas fa-box-open"></i> Stock</h2>
       <div class="modal-body" style="overflow-y: scroll; height: 300px;">
-        <table class="table table-dark table-striped">
+        <table class="table table-dark table-striped ">
     <thead>
       <tr>
         <th>Firstname</th>
