@@ -23,15 +23,15 @@
     </div>
 
     <!-- Login Form -->
-    <form method="post">
-      <input type="text" id="login" class="fadeIn second" name="login" placeholder="login">
-      <input type="password" id="password" class="fadeIn third" name="login" placeholder="password">
+    <form action="call" method="post" >
+      <input type="text" id="login" class="fadeIn second" name="usrname" placeholder="login">
+      <input type="password" id="password" class="fadeIn third" name="passwd" placeholder="password">
       <input type="submit" class="fadeIn fourth" value="Log In" >
     </form>
 
     <!-- Remind Passowrd -->
     <div id="formFooter">
-      <a class="underlineHover" href="Dashboard.jsp">Forgot Password?</a>
+      <a class="underlineHover" >Forgot Password?</a>
     </div>
 
   </div>
