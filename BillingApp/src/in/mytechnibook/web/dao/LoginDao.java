@@ -1,4 +1,4 @@
-package com.technibook.web.dao;
+package in.mytechnibook.web.dao;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -7,6 +7,7 @@ import java.sql.ResultSet;
 
 public class LoginDao 
 {
+
 	public boolean con(String uname, String pass)
 	{
 	try
@@ -35,8 +36,5 @@ public class LoginDao
 		
 	}
 	return false;
-	}
+	}	
 }
-	 
-
-
