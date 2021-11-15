@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Dashboard</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style.css') }}">
+    <!-- Font Awesome JS -->
+
+    <script src="https://kit.fontawesome.com/6ff250a32b.js" crossorigin="anonymous"></script>
+
+
+    <!--AJAX call for load the data of the graph-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+    <!-- This is for line chart source -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <!-- <link rel="script" type="text/js" href="{{ url_for('static',filename='js/linegrapj.js') }}"> -->
+
+
+
+
+</head>
+
+<body>
+    <!--Simple vartical nav bar-->
+    <div class="sidebar">
+        <ul class="list-unstyled components">
+            <li><a class="active" href="#Dashboard"><i class="far fa-chart-bar"></i> Dashboard </a></li>
+            <li><a href="#FoodMenu"><i class="fas fa-utensils"></i> Food Menu </a></li>
+            <li><a href="#CustomerDetails"><i class="far fa-address-card"></i> Customer Details</a></li>
+            <li><a href="#about"><i class="fas fa-user-alt"></i> About</a></li>
+        </ul>
+    </div>
+
+
+
+    <div class="container">
+
+        <div class="col-4">
+
+            <!-- Call the Line graph  -->
+            <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+            <!--Call the JS file form static folder -->
+            <script type="text/javascript" src="{{url_for('static', filename='js/Linegraph.js')}}"></script>
+
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>
